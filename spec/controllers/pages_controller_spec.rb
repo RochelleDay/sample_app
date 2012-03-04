@@ -8,7 +8,7 @@ describe PagesController do
   end
 
   describe "GET 'home'" do
-    it "should be successful" do
+    it "should be successful", :chapter5 => "true" do
       get 'home'
       response.should be_success
     end
